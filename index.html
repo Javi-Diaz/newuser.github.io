@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Crud</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JAVASCRIPT -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+
+        <div class="form-conteiner">
+            <h1>Agregar usuario</h1>
+            <form action="" method="post" class="form">
+                <label for="name">Nombre: </label>
+                <input id="name" type="text" name="nombre" autocomplete="off" placeholder="Introduzca su nombre">
+                <br>
+                <label for="surname">Apellido: </label>
+                <input id="surname" type="text" name="apellido" autocomplete="off" placeholder="Introduzca su apellido">
+                <br>
+                <label for="email">Correo Electrónico: </label>
+                <input id="email" type="email" name="email" autocomplete="off" placeholder="Introduzca su email">
+                <br>
+                <button type="submit" class="submit">Agregar usuario</button>
+                <p class="alertas"></p>
+            </form>
+        </div>
+
+
+        <table class="table">
+            <caption>Usuarios Registrados</caption>
+            <tbody class="tbody">
+              <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo electrónico</th>
+                <th></th>
+              </tr>
+            </tbody>
+        </table>
+    
+        
+    </div>
+</body>
+</html>

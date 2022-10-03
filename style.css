@@ -1,0 +1,246 @@
+/* GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: system-ui;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #111;
+}
+
+/* FORMULARIO Y TABLA */
+.table,.form-conteiner{
+    display: inline-block;    
+    margin-top: 180px;
+}
+
+/* FORMULARIO */
+.form-conteiner{
+    width: 400px;
+    height: 485px;
+    padding: 20px;
+    border: 1px solid rgb(130, 36, 167);
+}
+
+.form-conteiner h1{
+    margin-bottom: 12px;
+    font-size: 40px;
+}
+
+.form-conteiner .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-conteiner .form label{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-conteiner .form input{
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    transition: .5s border-bottom-color;
+}
+
+.form-conteiner .form input:focus{
+    border-bottom-color: rgb(130, 36, 167);
+}
+
+.form-conteiner .form .submit{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    background: transparent;
+    padding: 12px;  
+    border: 1px solid #fff;
+}
+
+.form-conteiner .form .submit:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-conteiner .form .alertas{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+
+/* TABLA */
+.table caption{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.table .tbody tr th{
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+.table .tbody tr td:nth-child(2),.table .tbody tr td:nth-child(3),.table .tbody tr td:nth-child(4){
+    border: 1px solid #fff;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.table .tbody tr td .modificar{
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(34, 250, 203);
+    padding: 17px;
+    font-size: 16px;
+}
+
+.table .tbody tr td .modificar:hover{
+    background-color:rgba(34, 250, 203, 0.3);
+}
+
+.table .tbody tr td .delete{
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(250, 34, 34);
+    padding: 17px;
+    font-size: 16px;
+}
+
+.table .tbody tr td .delete:hover{
+    background-color:rgba(250, 34, 34, 0.3);
+}
+
+/* FORMULARIO ACTUALIZAR */
+.div-formulario-actualizar{
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+}
+
+.div-formulario-actualizar .form-actualizar{
+    width: 400px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid rgb(130, 36, 167);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.div-formulario-actualizar .form-actualizar label{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.div-formulario-actualizar .form-actualizar input{
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    transition: .5s border-bottom-color;
+}
+
+.div-formulario-actualizar .form-actualizar input:focus{
+    border-bottom-color: rgb(130, 36, 167);
+}
+
+.div-formulario-actualizar .form-actualizar .btnModUsu{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    background: transparent;
+    padding: 12px;  
+    border: 1px solid #fff;
+}
+
+.div-formulario-actualizar .form-actualizar .btnModUsu:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.div-formulario-actualizar .form-actualizar .cerrar-formulario-actualizar{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(250, 34, 34);
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.div-formulario-actualizar .form-actualizar .cerrar-formulario-actualizar:hover{
+    background-color: rgb(250, 34, 34, .3);
+}
+
+.div-formulario-actualizar .form-actualizar .alertasModUsu{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:1050px){
+    .main{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-conteiner,.table{
+        margin-top: 100px;
+    }
+    .table{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .form-conteiner,.table{
+        margin-top: 100px;
+    }
+    .table{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .main{
+        width: 150vw;
+    }
+}
+
+@media screen and (max-width:440px){
+    .main{
+        width: 200vw;
+        height: auto;
+    }
+}
