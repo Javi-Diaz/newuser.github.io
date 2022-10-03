@@ -233,21 +233,17 @@
 }
 
 @media screen and (max-width:650px){
-    .main{
-        /*width: 100vw;*/
-        /*height: auto;*/
+    .table{
+        width: inherit;
         overflow-x: scroll;
     }
 }
 
 @media screen and (max-width:645px){
     .main{
-        width: auto;
         overflow-x: scroll;
     }
-    .table{
-        overflow: auto;
-    }
+
 }
 
 @media screen and (max-width:410px){
@@ -256,10 +252,3 @@
         padding: 10px;
     }
 }
-/*
-@media screen and (max-width:440px){
-    .main{
-        width: 200vw;
-        height: auto;
-    }
-}*/
